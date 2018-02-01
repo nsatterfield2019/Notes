@@ -18,7 +18,7 @@ camelCase = "New words are capitalized"
 
 # Not allowed
 # tax% = 0.05           # No special characters allowed
-# 8ball = 8             # Cannot start with a number
+# 8ball = 8             # Cannot start with  a number
 # ball8 = 8             # This is allowed
 # my.variable = True    # no dot notation
 # my variable = True    # no spaces
