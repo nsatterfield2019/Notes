@@ -5,7 +5,7 @@ period = "B"
 # they are assigned locally (scope)
 
 
-def hello(name):
+def hello(name = "Parker"):
     '''
     Says hello to the name
     :param name: 
