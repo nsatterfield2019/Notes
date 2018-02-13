@@ -137,3 +137,86 @@ for i in range(10):
 
 print(my_list)
 
+
+# print each pair
+for item in my_list:
+    print(item)
+
+
+# add 10 to each y item using iteration
+for i in range(len(my_list)):
+    my_list[i][1] += 10
+
+
+# LIST COMPREHENSIONS
+# make a list of numbers from 0 to 99 and print it
+my_list = []
+for i in range(100):
+    my_list.append(i)
+print(my_list)
+
+# or we can do it this way
+my_list = [x for x in range(100)]
+print(my_list)
+
+
+# Square every item in the previous list and print it
+for i in range(len(my_list)):
+    my_list[i] **= 2
+print(my_list)
+
+
+my_list = [x ** 2 for x in my_list]
+print(my_list)
+
+# create the list and quare it
+my_list = [x ** 2 for x in range(100)]
+print(my_list)
+
+# Alter list to show only odd numbers and print it
+my_list2 = []
+for square in my_list:
+    if square % 2 == 1:
+        my_list2.append(square)
+
+print(my_list2)
+
+
+my_list2 = [x for x in my_list if x % 2 == 1]
+print(my_list2)
+
+# Alter list to show only numbers 100 to 1000 and print it
+my_list3 = []
+for square in my_list2:
+    if square >= 100 and square <= 1000:
+        my_list3.append(square)
+print(my_list3)
+
+my_list3 = [x for x in my_list2 if x >= 100 and x <= 1000]
+print(my_list3)
+
+# Do all four at once
+my_list4 = [x ** 2 for x in range(100) if x ** 2 % 2 == 1 and x ** 2 >= 100 and x **  2 <= 1000]
+print(my_list4)
+
+
+# list comprehension
+# [returned_item for iterator in range_or_list filter]
+
+# roll a single die 100 times and put in list
+import random
+
+my_rolls = [random.randrange(1,7) for x in range(100)]
+print(my_rolls)
+
+# roll two dice in pairs 100 times and put in a list
+rolls =  [[random.randrange(1,7), random.randrange(1, 7)] for x in range(100)]
+print(rolls)
+
+#create a list of only the doubles from my_rolls
+doubles = [x for x in rolls if x[0] == x[1]]
+print(doubles)
+
+# can we generate a list and filter doubles on single line
+roll =  [x for x in [[random.randrange(1,7), random.randrange(1,7)] for y in range(100)] if x[0] == x[1]]
+print(roll)
