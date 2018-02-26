@@ -169,7 +169,7 @@ print(my_list)
 my_list = [x ** 2 for x in my_list]
 print(my_list)
 
-# create the list and quare it
+# create the list and square it
 my_list = [x ** 2 for x in range(100)]
 print(my_list)
 
