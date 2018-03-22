@@ -29,3 +29,4 @@ plt.ylabel("Computer Users")
 plt.xticks(library_number, names, rotation=90, fontsize=7) # plotted data, text to plot, rotation
 
 plt.show()
+

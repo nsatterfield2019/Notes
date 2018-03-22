@@ -3,7 +3,7 @@ import turtle
 my_turtle = turtle.Turtle()
 my_turtle.showturtle()
 my_turtle.shape("turtle")
-my_turtle.speed(0)
+my_turtle.speed(2)
 
 my_screen = turtle.Screen()
 my_screen.bgcolor('White')
