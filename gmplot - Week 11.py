@@ -3,7 +3,7 @@ import csv
 
 apikey = "AIzaSyD65be4pywe7-y4GjMmzZMidOpdmu2lkXo"
 
-mymap = GoogleMapPlotter(41.923311, -87.638520, 14, apikey=apikey)
+mymap = GoogleMapPlotter(41.923311, -87.638520, 12, apikey=apikey)
 
 mymap.marker(41.923311, -87.638520) # lat, long
 
@@ -18,8 +18,17 @@ mymap.plot(lats,longs, "red", ew=10) # lats, longs, color
 
 mymap.polygon(lats, longs, fc="yellow", ec="black") # lats, longs, color, facecolor(fc), edgecolor(ec)
 
-with open("/Users/Nathan/PycharmProjects/Notes/Parks_-_Public_Art.csv")
 
+with open("/Users/Nathan/PycharmProjects/Notes/Parks_-_Public_Art.csv") as f:
+    reader = csv.reader(f)
+    data = list(reader)
+
+print(data.pop(0))
+
+lats = [float(x[-3]) for x in data]
+long = [float(x[-2]) for x in data]
+
+mymap.scatter(lats, longs, color="green", marker=False, size=100)
 
 mymap.draw("mymap.html")
 
