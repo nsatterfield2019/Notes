@@ -26,6 +26,7 @@ with open("/Users/Nathan/PycharmProjects/Notes/Parks_-_Public_Art.csv") as f:
 
 print(data.pop(0))
 
+
 lats = [float(x[-3]) for x in data]
 longs = [float(x[-2]) for x in data]
 
