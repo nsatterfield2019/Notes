@@ -1,0 +1,27 @@
+
+QWidget {
+    background-color: "Light blue"
+
+}
+
+
+
+
+QLabel {
+    color:"red";
+    font-size: 12px;
+
+}
+
+QLabel#title {
+    color: "blue";
+    font-family: "Comic Sans MS";
+    font-size: 100px;
+    height: 50px;
+}
+
+QLineEdit {
+    width: 100px;
+    background-color: "white"
+
+}
